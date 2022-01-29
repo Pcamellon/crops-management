@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>ico/Alpha Dista Icon 78.ico</file>
+        <file>ico/AllDesign_biz_38.png</file>
+        <file>ico/AllDesign_biz_51.png</file>
+        <file>ico/Cloc.ico</file>
+        <file>ico/cnuib.png</file>
+        <file>ico/Error.ico</file>
+        <file>ico/printer.ico</file>
+        <file>ico/hoja.png</file>
+        <file>ico/del_user.png</file>
+        <file>ico/new_user.png</file>
+    </qresource>
+</RCC>
