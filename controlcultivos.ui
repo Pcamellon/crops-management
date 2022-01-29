@@ -7,8 +7,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
-    <height>437</height>
+    <width>657</width>
+    <height>377</height>
    </rect>
   </property>
   <property name="palette">
@@ -143,6 +143,15 @@
      <colorrole role="ToolTipText">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
         <red>0</red>
         <green>0</green>
         <blue>0</blue>
@@ -286,6 +295,15 @@
        </color>
       </brush>
      </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
     </inactive>
     <disabled>
      <colorrole role="WindowText">
@@ -423,6 +441,15 @@
        </color>
       </brush>
      </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="NoBrush">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
     </disabled>
    </palette>
   </property>
@@ -434,7 +461,7 @@
     <normaloff>:/ico/hoja.png</normaloff>:/ico/hoja.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: #bfda7f;</string>
+   <string notr="true"/>
   </property>
   <property name="iconSize">
    <size>
@@ -444,7 +471,7 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(205, 232, 136);</string>
+    <string notr="true"/>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
@@ -452,7 +479,7 @@
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QPushButton" name="pB_tablaSem">
@@ -496,7 +523,7 @@
         <item>
          <widget class="QComboBox" name="cB_diaSemana">
           <property name="styleSheet">
-           <string notr="true">background-color:  rgb(183, 207, 121);
+           <string notr="true">
 border-width: 2px;
 border-radius: 2px;
 border-color: beige;
@@ -550,7 +577,7 @@ padding: 2px;</string>
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color:  rgb(183, 207, 121);
+           <string notr="true">
 border-width: 2px;
 border-radius: 2px;
 border-color: beige;
@@ -610,7 +637,7 @@ padding: 2px;</string>
            </sizepolicy>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color:  rgb(183, 207, 121);
+           <string notr="true">
 border-width: 2px;
 border-radius: 3px;
 border-color: beige;
@@ -642,8 +669,15 @@ padding: 2px;</string>
        <property name="enabled">
         <bool>true</bool>
        </property>
+       <property name="palette">
+        <palette>
+         <active/>
+         <inactive/>
+         <disabled/>
+        </palette>
+       </property>
        <property name="styleSheet">
-        <string notr="true">background-color:  rgb(183, 207, 121);</string>
+        <string notr="true"/>
        </property>
       </widget>
      </widget>
@@ -655,8 +689,8 @@ padding: 2px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>700</width>
-     <height>21</height>
+     <width>657</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">

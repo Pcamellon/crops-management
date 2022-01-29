@@ -13,11 +13,13 @@
 * leer y guardar labores de un txt
 *
 */
-#include <QObject>
+
 #include "ui_controlcultivos.h"
 #include "controlcultivos.h"
 #include "pagoshistoricos.h"
 #include "compras.h"
+
+#include <QObject>
 #include <QSqlQuery>
 #include <QSqlTableModel>
 #include <QModelIndex>
@@ -41,18 +43,16 @@ ControlCultivos::ControlCultivos(QWidget *parent) :
           this,&ControlCultivos::calcPagosTotales);
   
   QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-  QString dirDB = QDir::currentPath();
-  db.setDatabaseName(dirDB + "/bd.sqlite");
+  db.setDatabaseName(QDir::currentPath() + "/bd.sqlite");
   
   if(!db.open()){
     QMessageBox::critical(this,"Error!",
-                          "<h1>Hola!</h1><br>"
                           "No puedo cargar la base de datos",
                           QMessageBox::Cancel);
 
   }
   
-  tabla = new QSqlTableModel(this,db);
+  tabla = new QSqlTableModel(this, db);
   
   /* + (ui->cB_selecCultivo->currentText() + 1)*/
   tabla->setTable("Pago_Semanal_Tabaco"); //Pago_Semanal_Tabaco
